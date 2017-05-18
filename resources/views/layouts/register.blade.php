@@ -17,7 +17,6 @@
     <meta itemprop="description" content="">
 
 
-
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
 
@@ -33,10 +32,9 @@
     <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
 
 </head>
-<body class="presentation-page">
-@include('includes.top-nav')
+<body class="full-screen register">
+@include('includes.small_header')
 @yield('content')
-@include('includes.footer')
 </body>
 
     <script src="/js/jquery-1.10.2.js" type="text/javascript"></script>

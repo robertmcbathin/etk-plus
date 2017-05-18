@@ -41,7 +41,7 @@
                           </ul>
                         </li>
       <li>
-        <a href="http://www.creative-tim.com/product/paper-kit-pro" class="btn btn-danger btn-fill"><i class="fa fa-superpowers"></i> Активировать карту</a>
+        <a href="{{ route('register') }}" class="btn btn-danger btn-fill"><i class="fa fa-superpowers"></i> Активировать карту</a>
       </li>
       <li>
         <a class="btn btn-danger btn-simple" href="presentation.html#examples">Личный кабинет</a>

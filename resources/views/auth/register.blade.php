@@ -1,76 +1,71 @@
-@extends('layouts.app')
-
+@extends('layouts.register')
+@section('description')
+@endsection
+@section('keywords')
+@endsection
+@section('title')
+Активация карты
+@endsection
 @section('content')
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Register</div>
-                <div class="panel-body">
-                    <form class="form-horizontal" role="form" method="POST" action="{{ route('register') }}">
-                        {{ csrf_field() }}
-
-                        <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
-                            <label for="name" class="col-md-4 control-label">Name</label>
-
-                            <div class="col-md-6">
-                                <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}" required autofocus>
-
-                                @if ($errors->has('name'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('name') }}</strong>
-                                    </span>
-                                @endif
+    <div class="wrapper">
+        <div class="background" style="background-image: url('../assets/img/blue.jpg');">
+            <div class="filter-black"></div>
+            <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-1 col-sm-7 col-xs-12">
+                            <div class="info info-horizontal">
+                                <div class="icon">
+                                    <i class="fa fa-percent"></i>
+                                </div>
+                                <div class="description">
+                                    <h3> Скидки </h3>
+                                    <p>Получайте скидки у партнеров программы</p>
+                                </div>
+                            </div>
+                            <div class="info info-horizontal">
+                                <div class="icon">
+                                    <i class="fa fa-gift"></i>
+                                </div>
+                                <div class="description">
+                                    <h3> Бонусы </h3>
+                                    <p>Накапливайте бонусы и расплачивайтесь ими</p>
+                                </div>
+                            </div>
+                            <div class="info info-horizontal">
+                                <div class="icon">
+                                    <i class="fa fa-ruble"></i>
+                                </div>
+                                <div class="description">
+                                    <h3> Кэшбэк </h3>
+                                    <p>Ну и, конечно же, возвращайте часть денег себе!</p>
+                                </div>
                             </div>
                         </div>
+                        <div class="col-md-4 col-sm-5 col-xs-12">
+                            <div class="demo-card">
+                                <h3 class="title text-center">Активация карты</h3>
 
-                        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                            <label for="email" class="col-md-4 control-label">E-Mail Address</label>
+                                <div class="division">
+                                    <div class="line l"></div>
+                                    <div class="line r"></div>
+                                </div>
+                                <form class="register-form">
+                                    <input type="text" class="form-control" minlength="9" maxlength="9" placeholder="Номер транспортной карты">
 
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required>
+                                    <input type="text" class="form-control" minlength="9" maxlength="9" placeholder="Номер бонусной карты">
 
-                                @if ($errors->has('email'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
-                                @endif
+
+                                    <button class="btn btn-fill btn-block">Активировать</button>
+                                </form>
+                                <div class="login">
+                                    <p>Уже активировали карту? Можете <a>войти</a>.</p>
+                                </div>
                             </div>
                         </div>
-
-                        <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-                            <label for="password" class="col-md-4 control-label">Password</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control" name="password" required>
-
-                                @if ($errors->has('password'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('password') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="password-confirm" class="col-md-4 control-label">Confirm Password</label>
-
-                            <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="col-md-6 col-md-offset-4">
-                                <button type="submit" class="btn btn-primary">
-                                    Register
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+                    </div>
             </div>
+
+            @include('includes.small_footer')
         </div>
     </div>
-</div>
 @endsection
