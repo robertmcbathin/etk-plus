@@ -8,3 +8,19 @@
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, a, .td-name, td {
     font-family: 'Exo 2', sans-serif;
 }
+.navbar-ct-danger{
+	background-color: rgb(133,13,255);
+	background-color: #8369FF;
+}
+.navbar .navbar-nav > li > a.btn.btn-danger.btn-fill, .btn-danger.btn-fill {
+    color: #FFFFFF;
+    background-color: #FFB982;
+    opacity: 1;
+}
+.navbar .navbar-nav > li > a.btn.btn-danger, .btn-danger {
+    border-color: none;
+}
+.presentation-page .navbar .navbar-nav > li > a.btn {
+    color: #FFFFFF;
+    opacity: 1;
+}
