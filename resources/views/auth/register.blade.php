@@ -58,7 +58,7 @@
                                     <button class="btn btn-fill btn-block">Активировать</button>
                                 </form>
                                 <div class="login">
-                                    <p>Уже активировали карту? Можете <a>войти</a>.</p>
+                                    <p>Уже активировали карту? Можете <a href="{{ route('login') }}">войти</a>.</p>
                                 </div>
                             </div>
                         </div>
