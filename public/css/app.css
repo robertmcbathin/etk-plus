@@ -1,3 +1,12 @@
+
+/*
+*
+* * primary-color: #7557FF;
+* * secondary-color: #FFAE70;
+* * primary-subsidiary-color: #371CB2;
+* * subsidiary-primary-color: #32CC31;
+* * subsidiary-secondary-color: #34B234;
+ */ 
 .presentation-page .main {
     margin-top: 0px;
 }
@@ -10,17 +19,62 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, a, .td
 }
 .navbar-ct-danger{
 	background-color: rgb(133,13,255);
-	background-color: #8369FF;
+	background-color: #7557FF;
 }
 .navbar .navbar-nav > li > a.btn.btn-danger.btn-fill, .btn-danger.btn-fill {
     color: #FFFFFF;
-    background-color: #FFB982;
+    background-color: #32CC31;
     opacity: 1;
+    border-color: #34B234;
 }
-.navbar .navbar-nav > li > a.btn.btn-danger, .btn-danger {
-    border-color: none;
+.navbar .navbar-nav > li > a.btn.btn-danger.btn-fill:hover, .btn-danger.btn-fill:hover {
+    color: #FFFFFF;
+    background-color: #34B234;
+    opacity: 1;
+    border-color: #34B234;
 }
 .presentation-page .navbar .navbar-nav > li > a.btn {
     color: #FFFFFF;
     opacity: 1;
+}
+.navbar .navbar-nav > li > a.btn.btn-danger, .btn-danger {
+    border-width: 1px;
+    border-color: #32CC31;
+    background-color: rgba(0,0,0,0);
+    color: #32CC31;
+}
+.navbar .navbar-nav > li > a.btn.btn-danger:hover,  .btn-danger:hover {
+    border-color: #34B234;
+    background-color: rgba(0,0,0,0);
+    color: #34B234;
+}
+a:hover{
+    color: #34B234;
+}
+a#login-forgot-link {
+    background-color: transparent;
+    color: #34B234;
+}
+.btn, .navbar .navbar-nav > li > a.btn {
+    border-radius: 10px;
+    box-sizing: border-box;
+    border-width: 2px;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 7px 18px;
+    border-color: #66615B;
+    color: #66615B;
+    -webkit-transition: all 150ms linear;
+    -moz-transition: all 150ms linear;
+    -o-transition: all 150ms linear;
+    -ms-transition: all 150ms linear;
+    transition: all 150ms linear;
+}
+.logo-container .logo {
+    overflow: hidden;
+    border-radius: 30%;
+    border: 0px;
+    width: 40px;
+    float: left;
 }

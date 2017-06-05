@@ -24,7 +24,7 @@
                                     <button class="btn btn-danger btn-block">Войти</button>
                                 </form>
                                 <div class="forgot">
-                                    <a href="#" class="btn btn-simple btn-danger">Забыли пароль?</a>
+                                    <a href="#" class="btn btn-simple btn-danger" id="login-forgot-link">Забыли пароль?</a>
                                 </div>
                             </div>
                         </div>

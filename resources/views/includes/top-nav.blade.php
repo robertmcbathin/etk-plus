@@ -8,13 +8,13 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a href="http://www.creative-tim.com">
+      <a href="{{ route('index') }}">
        <div class="logo-container">
         <div class="logo">
-          <img src="assets/img/new_logo.png" alt="Creative Tim Logo">
+          <img src="/images/etk-plus-logo.png" alt="ETKplus">
         </div>
         <div class="brand">
-            <h5>ЕТК+</h5>
+            <h5>ЕТКплюс</h5>
         </div>
       </div>
     </a>
@@ -44,7 +44,7 @@
         <a href="{{ route('register') }}" class="btn btn-danger btn-fill"><i class="fa fa-superpowers"></i> Активировать карту</a>
       </li>
       <li>
-        <a class="btn btn-danger btn-simple" href="presentation.html#examples">Личный кабинет</a>
+        <a class="btn btn-danger btn-simple" href="{{ route('dashboard') }}">Личный кабинет</a>
       </li>
     </ul>
   </div><!-- /.navbar-collapse -->

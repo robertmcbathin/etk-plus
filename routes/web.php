@@ -23,7 +23,14 @@ Route::group(['middleware' => 'web'], function()
 		'as' => 'insert']);
 });
 Auth::routes();
+/**
+ * PROFILE ROUTES
+ */
 Route::group(['middleware' => 'auth'], function()
 {
-
+		Route::get('/dashboard', ['uses' => 'UserController@getDashboard',
+		'as' => 'dashboard']);
 });
+/**
+ * END OF PROFILE ROUTES
+ */
