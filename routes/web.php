@@ -34,3 +34,13 @@ Route::group(['middleware' => 'auth'], function()
 /**
  * END OF PROFILE ROUTES
  */
+/**
+ * AJAX ROUTES
+ */
+Route::post('/ajax/check-email-on-exist', [ 
+	'uses' => 'Auth\RegisterController@ajaxCheckEmailOnExist',
+    'as' => 'ajax.check-email-on-exist'
+    ]);
+/**
+ * 
+ */

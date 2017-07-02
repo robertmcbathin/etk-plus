@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/png" href="assets/img/favicon.ico">
+    <link rel="icon" type="image/png" href="favicon.ico">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
     <title>@yield('title')</title>
@@ -52,7 +52,36 @@
     <!--  Plugins for presentation page -->
     <script src="/js/presentation-page/atv-img-min.js"></script>
     <script src="/js/presentation-page/jquery.sharrre.js"></script>
-
+    <script>
+    /**
+     * CHECK EMAIL ON EXIST
+     * @param  {[type]} $('#email').val().length >             5 [description]
+     * @return {[type]}                                [description]
+     */
+  $('#email-registration-input').on('keyup', function(){
+    if ($('#email-registration-input').val().length > 0) {
+        console.log('Fuck');
+        $.ajax({
+          method: 'POST',
+          url: emailRegistrationUrl,
+          data: { 
+            email: $('#email-registration-input').val(), 
+            _token: token}
+        })
+        .done(function(msg){
+          if ((msg['message']) == 'error'){
+            $('#email-verify-checker').removeClass('has-success');
+          };
+          if ((msg['message']) == 'success'){
+            console.log('Good');
+            $('#email-verify-checker').addClass('has-success');
+          };
+        });
+        } else {
+            console.log('Oops...');
+        }
+});
+</script>
     <!-- Paper kit Core Functions -->
     <script src="/js/ct-paper.js"></script>
     <script src="/js/demo.js"></script>

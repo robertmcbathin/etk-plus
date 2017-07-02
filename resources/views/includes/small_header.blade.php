@@ -8,7 +8,17 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="{{ route('index') }}">ЕТКплюс</a>
+
+                <a href="{{ route('index') }}">
+       <div class="logo-container">
+        <div class="logo">
+          <img src="/images/etkplus40.png" alt="ETKplus">
+        </div>
+        <div class="brand">
+            <h6 class="logo-title">ЕТКплюс</h6>
+        </div>
+      </div>
+    </a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->

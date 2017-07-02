@@ -22,27 +22,12 @@
                             <ul class="uppercase-links stacked-links">
                                 <li>
                                     <a href="#">
-                                        Home
+                                        На главную
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        Discover
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Blog
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Live Support
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Money Back
+                                        О проекте
                                     </a>
                                 </li>
                             </ul>
@@ -54,17 +39,12 @@
                             <ul class="uppercase-links stacked-links">
                                 <li>
                                     <a href="#">
-                                       Contact Us
+                                       Как стать участником системы
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                       We're Hiring
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                       About Us
+                                       Партнерская сеть
                                     </a>
                                 </li>
                             </ul>
@@ -75,17 +55,12 @@
                             <ul class="uppercase-links stacked-links">
                                 <li>
                                     <a href="#">
-                                        Portfolio
+                                        Активировать карту
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                       How it works
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                       Testimonials
+                                       Личный кабинет
                                     </a>
                                 </li>
                             </ul>
@@ -95,10 +70,10 @@
                         <div class="links">
                             <ul class="stacked-links">
                                 <li>
-                                    <h4>13.723<br> <small>accounts</small></h4>
+                                    <h4>13.723<br> <small>участники</small></h4>
                                 </li>
                                 <li>
-                                    <h4>55.234<br> <small>downloads</small></h4>
+                                    <h4>55.234<br> <small>партнеры</small></h4>
                                 </li>
 
                             </ul>

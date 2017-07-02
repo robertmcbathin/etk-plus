@@ -8,7 +8,7 @@
 @endsection
 @section('content')
     <div class="wrapper">
-        <div class="background" style="background-image: url('../assets/img/blue.jpg');">
+        <div class="background" style="background-image: url('/images/backgrounds/bg-image.jpg');">
             <div class="filter-black"></div>
             <div class="container">
                     <div class="row">

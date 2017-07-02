@@ -3,9 +3,13 @@
 namespace App\Http\Controllers\Auth;
 
 use App\User;
+use DB;
+use Session;
+use Mail;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use Illuminate\Http\Request;
 
 class RegisterController extends Controller
 {
@@ -67,5 +71,16 @@ class RegisterController extends Controller
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
         ]);
+    }
+
+    public function ajaxCheckEmailOnExist(Request $request){
+      $email = DB::table('users')
+                 ->where('email', $request->email)
+                 ->first();
+
+      if ($email == NULL)
+        return response()->json(['message' => 'error'],200);
+      if ($email !== NULL)
+        return response()->json(['message' => 'success', 'data' => $email],200);
     }
 }

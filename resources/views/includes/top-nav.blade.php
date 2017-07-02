@@ -11,10 +11,10 @@
       <a href="{{ route('index') }}">
        <div class="logo-container">
         <div class="logo">
-          <img src="/images/etk-plus-logo.png" alt="ETKplus">
+          <img src="/images/etkplus40.png" alt="ETKplus">
         </div>
         <div class="brand">
-            <h5>ЕТКплюс</h5>
+            <h6 class="logo-title">ЕТКплюс</h6>
         </div>
       </div>
     </a>
@@ -24,10 +24,10 @@
   <div class="collapse navbar-collapse" id="navigation-example-2">
     <ul class="nav navbar-nav navbar-right">
       <li>
-      <a class="btn btn-danger btn-simple" href="presentation.html#components">О проекте</a>
+      <a class="btn btn-danger btn-simple btn-white" href="presentation.html#components">О проекте</a>
       </li>
       <li class="dropdown">
-                          <a href="#" class="dropdown-toggle btn btn-simple btn-warning" data-toggle="dropdown" aria-expanded="false">Партнерская сеть <b class="caret"></b></a>
+                          <a href="#" class="dropdown-toggle btn btn-simple btn-warning btn-white" data-toggle="dropdown" aria-expanded="false">Партнерская сеть <b class="caret"></b></a>
 <!--                                  You can add classes for different colours on the next element -->
                           <ul class="dropdown-menu dropdown-menu-right">
                             <li class="dropdown-header">Dropdown header</li>
@@ -44,7 +44,7 @@
         <a href="{{ route('register') }}" class="btn btn-danger btn-fill"><i class="fa fa-superpowers"></i> Активировать карту</a>
       </li>
       <li>
-        <a class="btn btn-danger btn-simple" href="{{ route('dashboard') }}">Личный кабинет</a>
+        <a class="btn btn-danger btn-simple btn-white" href="{{ route('dashboard') }}">Личный кабинет</a>
       </li>
     </ul>
   </div><!-- /.navbar-collapse -->

@@ -19,19 +19,19 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, a, .td
 }
 .navbar-ct-danger{
 	background-color: rgb(133,13,255);
-	background-color: #7557FF;
+	background-color: #37363c;
 }
 .navbar .navbar-nav > li > a.btn.btn-danger.btn-fill, .btn-danger.btn-fill {
     color: #FFFFFF;
-    background-color: #32CC31;
+    background-color: #5e925d;
     opacity: 1;
-    border-color: #34B234;
+    border-color: #5e925d;
 }
 .navbar .navbar-nav > li > a.btn.btn-danger.btn-fill:hover, .btn-danger.btn-fill:hover {
     color: #FFFFFF;
-    background-color: #34B234;
+    background-color: #429441;
     opacity: 1;
-    border-color: #34B234;
+    border-color: #429441;
 }
 .presentation-page .navbar .navbar-nav > li > a.btn {
     color: #FFFFFF;
@@ -78,3 +78,26 @@ a#login-forgot-link {
     width: 40px;
     float: left;
 }
+.btn-white{
+    color: #FFFFFF !important;
+}
+.btn-white:hover{
+    color: #a5a5a5 !important;
+}
+.logo-title{
+    text-transform: none;
+}
+.no-padding{
+    padding: 0 !important;
+}
+.presentation-page .title-brand {
+     text-transform: none;
+     text-shadow: none;
+}
+.presentation-page .section-light-brown {
+    background-color: #d8d8d8;
+}
+@media (max-width: 500px){
+.presentation-page .section-header .card {
+    height: 200px !important;
+}}

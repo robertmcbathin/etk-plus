@@ -765,6 +765,6 @@
     -o-transform: translateY(-28px); } }
 @media (max-width: 500px) {
   .presentation-page .section-header .card {
-    min-height: 230px; } }
+    min-height: 200px; } }
 
 /*# sourceMappingURL=examples.css.map */

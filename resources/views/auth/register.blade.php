@@ -8,7 +8,7 @@
 @endsection
 @section('content')
 <div class="wrapper">
-    <div class="background" style="background-image: url('../assets/img/blue.jpg');">
+    <div class="background" style="background-image: url('/images/backgrounds/bg-image.jpg');">
         <div class="filter-black"></div>
         <div class="container">
             <div class="row">
@@ -46,18 +46,18 @@
                         <h3 class="title text-center">Активация карты</h3>
 
                         <div class="division">
-                            <div class="line l"></div>
-                            <div class="line r"></div>
+                            <small class="text-muted">Для активации карты Вам необходимо использовать адрес электронной почты, указанный при регистрации в личном кабинете ЕТК</small>
                         </div>
                         <form class="register-form">
-                            <input type="text" class="form-control" minlength="9" maxlength="9" placeholder="Номер транспортной карты">
+                            <div class="form-group" id="email-verify-checker">
+                                <input type="email" class="form-control text-center"  placeholder="Электронная почта" name="email" id="email-registration-input">
+                            </div>
+                          <input type="text" class="form-control text-center" minlength="9" maxlength="9" placeholder="Номер бонусной карты" name="card_number">
+                          <input type="checkbox" name="acception" checked value="1">
+                          Я ознакомлен(а) с <a href="#something">пользовательским соглашением</a>.
 
-                            <input type="text" class="form-control" minlength="9" maxlength="9" placeholder="Номер бонусной карты">
-                             <input type="checkbox" name="acception" checked value="1">
-                                      Я ознакомлен(а) с <a href="#something">пользовательским соглашением</a>.
-
-                            <button class="btn btn-fill btn-block">Активировать</button>
-                        </form>
+                          <button class="btn btn-fill btn-block">Активировать</button>
+                      </form>
                       <div class="login">
                         <p>Уже активировали карту? Можете <a href="{{ route('login') }}">войти</a>.</p>
                     </div>
@@ -70,3 +70,7 @@
 </div>
 </div>
 @endsection
+<script>
+    var token = '{{ Session::token() }}';
+    var emailRegistrationUrl = '{{route('ajax.check-email-on-exist')}}';
+</script>
